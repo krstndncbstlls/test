@@ -147,8 +147,11 @@
         var volumeMenu = document.getElementById("volumeMenu");    
 
         var winSound = document.getElementById("winSound");
-        winSound.src = 'music/winSound.mp3';
-        winSound.volume = 0.9;
+        // winSound.src = '__CSS__/ScratchPurple/music/winSound.mp3';
+        // winSound.volume = 0.9;
+        winSound.onloadeddata = function() {
+            winSound.play();
+        };
         // ----------
     
         var iconArr = '5';
@@ -218,13 +221,12 @@
                     }
                 });
                 if (winPlaySound) {
-                    playWinSound(); // Play sound after user interaction
+                    winSound.src = '__CSS__/ScratchPurple/music/winSound.mp3';
+                    winSound.volume = 0.9;
+                    // Resetting the current time to 0 ensures the audio will play from the beginning
+                    winSound.currentTime = 0;
                 }
             }
-        }
-    
-        function playWinSound() {
-            winSound.play();
         }
     
     
