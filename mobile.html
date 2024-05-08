@@ -4,11 +4,12 @@
 
 <head>
     <title>mobile</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- icon -->
     <link href="fonts/icomoon_2/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -19,7 +20,7 @@
     <link rel="stylesheet" href="css/general.css" type="text/css" />
     <link rel="stylesheet" href="css/mobile.css" type="text/css" />
 </head>
-<body id="mainBody" style="background-image: url(images/mobile/mainBg.jpg);">
+<body id="mainBody" style="background-image: url(images/mobile/mainBg.jpg);font-family: 'Noto Sans TC', sans-serif;">
     <div class="topCon">
         <p class="datetime-event m-0 wthBorder" style="--edgeColor:#4d435b;">5月12日00:00至5月12日23:59</p>
         <div class="menuBtn">
@@ -37,11 +38,30 @@
         </div>
     </div>
     <div class="eggScratch-con">
-        <for start="0" end="8">
-            <div class="egg-item" style="background-image: url(images/egg-bg.png);">
-                <canvas class="egg-cover" width="125" height="146.35"></canvas>
-            </div>
-        </for>
+        <div class="egg-item" style="background-image: url(images/egg-bg.png);">
+            <canvas class="egg-cover" width="125" height="146.35"></canvas>
+        </div>
+        <div class="egg-item" style="background-image: url(images/egg-bg.png);">
+            <canvas class="egg-cover" width="125" height="146.35"></canvas>
+        </div>
+        <div class="egg-item" style="background-image: url(images/egg-bg.png);">
+            <canvas class="egg-cover" width="125" height="146.35"></canvas>
+        </div>
+        <div class="egg-item" style="background-image: url(images/egg-bg.png);">
+            <canvas class="egg-cover" width="125" height="146.35"></canvas>
+        </div>
+        <div class="egg-item" style="background-image: url(images/egg-bg.png);">
+            <canvas class="egg-cover" width="125" height="146.35"></canvas>
+        </div>
+        <div class="egg-item" style="background-image: url(images/egg-bg.png);">
+            <canvas class="egg-cover" width="125" height="146.35"></canvas>
+        </div>
+        <div class="egg-item" style="background-image: url(images/egg-bg.png);">
+            <canvas class="egg-cover" width="125" height="146.35"></canvas>
+        </div>
+        <div class="egg-item" style="background-image: url(images/egg-bg.png);">
+            <canvas class="egg-cover" width="125" height="146.35"></canvas>
+        </div>
     </div>
     <div class="gameplayBtn">
         <div class="scrape-btn">即刻開刮</div>
@@ -83,11 +103,11 @@
         <div class="rulemodal-overlay"></div>
     </div>
     <img src="images/coin.png" class="coin-cursor">
-</body>
-<audio id="audioBG"></audio>
-<audio id="giftSound"></audio>
-</html>
 
+    <audio id="audioBG"></audio>
+    <audio id="winSound"></audio>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="js/pixi.min.js"></script>
 <script src="https://www.kkkk1000.com/js/spriteUtilities.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -144,11 +164,11 @@
     document.addEventListener('DOMContentLoaded', function() {
         var audioBG = document.getElementById("audioBG");
         audioBG.src = 'music/fireflies.mp3';
-        var volumeMenu = document.getElementById("volumeMenu");    
-
-        var giftSound = document.getElementById("giftSound");
-        giftSound.src = 'music/giftSound.mp3';
-        giftSound.volume = 0.9;
+        var volumeMenu = document.getElementById("volumeMenu");
+    
+        var winSound = document.getElementById("winSound");
+        winSound.src = 'music/winSound.mp3';
+        winSound.volume = 0.9;
         // ----------
     
         var iconArr = '5';
@@ -194,11 +214,9 @@
                     }
                 });
             }
-            giftSound.currentTime = 1.6;
-            giftSound.play();
         });
     
-        // ---------------------------------------------    
+        // ---------------------------------------------
         function scrachedHandled(canvas, ctx, width, height) {
             const isHalfScratched = checkScratchProgress(ctx, width, height);
             if (isHalfScratched) {
@@ -219,6 +237,7 @@
                 });
             }
         }
+    
     
         function handleTouch(event, canvas, ctx, scratchSize, revealPercent, width, height) {
             event.preventDefault();
@@ -349,6 +368,7 @@
             //     });
             //     ajaxSendControl = false;
             // }
+            winSound.play();
             removeAllExistingFrws();
             createAndAppendFrws();
             mainBody.classList.remove("scrapped");
@@ -469,10 +489,6 @@
             document.addEventListener("touchmove", function(event) {
                 coinCursor.style.left = event.touches[0].clientX + "px";
                 coinCursor.style.top = event.touches[0].clientY + "px";
-                setTimeout(function() {
-                    giftSound.currentTime = 0;
-                    giftSound.play();
-                }, 500);
             });
         }
     });
@@ -485,5 +501,5 @@
     document.addEventListener('contextmenu', event => event.preventDefault());
     document.addEventListener('keydown', event => { if (event.ctrlKey) event.preventDefault(); });
     document.addEventListener('mousedown', event => { if (event.button === 0) event.preventDefault();});
-    
-    </script>
+</script>
+</html>
