@@ -147,11 +147,8 @@
         var volumeMenu = document.getElementById("volumeMenu");    
 
         var winSound = document.getElementById("winSound");
-        // winSound.src = '__CSS__/ScratchPurple/music/winSound.mp3';
-        // winSound.volume = 0.9;
-        winSound.onloadeddata = function() {
-            winSound.play();
-        };
+        winSound.src = 'music/winSound.mp3';
+        winSound.volume = 0.9;
         // ----------
     
         var iconArr = '5';
@@ -205,7 +202,6 @@
             if (isHalfScratched) {
                 const parentItem = canvas.closest('.egg-item');
                 const eggItems = document.querySelectorAll('.egg-item');
-                var winPlaySound = false;
                 eggItems.forEach(item => {
                     const eggCover = item.querySelector('.egg-cover');
                     const eggIco = item.querySelector('.egg-ico');
@@ -220,12 +216,7 @@
                         scrapeBtn.style.pointerEvents = 'none';
                     }
                 });
-                if (winPlaySound) {
-                    winSound.src = 'music/winSound.mp3';
-                    winSound.volume = 0.9;
-                    // Resetting the current time to 0 ensures the audio will play from the beginning
-                    winSound.currentTime = 0;
-                }
+                winSound.play();
             }
         }
     
