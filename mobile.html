@@ -85,7 +85,7 @@
     <img src="images/coin.png" class="coin-cursor">
 </body>
 <audio id="audioBG"></audio>
-<audio id="winSound"></audio>
+<audio id="giftSound"></audio>
 </html>
 
 <script src="js/pixi.min.js"></script>
@@ -146,9 +146,9 @@
         audioBG.src = 'music/fireflies.mp3';
         var volumeMenu = document.getElementById("volumeMenu");    
 
-        var winSound = document.getElementById("winSound");
-        winSound.src = 'music/winSound.mp3';
-        winSound.volume = 0.9;
+        var giftSound = document.getElementById("giftSound");
+        giftSound.src = 'music/giftSound.mp3';
+        giftSound.volume = 0.9;
         // ----------
     
         var iconArr = '5';
@@ -194,8 +194,8 @@
                     }
                 });
             }
-            winSound.currentTime = 1.7;
-            winSound.play();
+            giftSound.currentTime = 1.6;
+            giftSound.play();
         });
     
         // ---------------------------------------------    
@@ -470,8 +470,8 @@
                 coinCursor.style.left = event.touches[0].clientX + "px";
                 coinCursor.style.top = event.touches[0].clientY + "px";
                 setTimeout(function() {
-                    winSound.currentTime = 0;
-                    winSound.play();
+                    giftSound.currentTime = 0;
+                    giftSound.play();
                 }, 500);
             });
         }
