@@ -57,7 +57,6 @@
         <p class="m-0 ps-txt">◆ 點擊「即刻開刮」將自動扣除1500點兌換一次機會。</p>
     </div>
     <!-- ---  popup modal --- -->
-    <button type="button" class="wsbtn"></button>
     <div class="giftModal-con">
         <div class="giftmodal-outer">
             <div class="giftmodal-inner">
@@ -149,7 +148,6 @@
 
         var winSound = document.getElementById("winSound");
         winSound.src = 'music/winSound.mp3';
-        winSound.volume = 0.9;
         // ----------
     
         var iconArr = '5';
@@ -195,14 +193,11 @@
                     }
                 });
             }
-        });
-    
-        // ---------------------------------------------
-        var wsbtn = document.querySelector('.wsbtn');
-        $(document).on('click', '.wsbtn', function () {
             winSound.play();
+            winSound.volume = 0;
         });
     
+        // ---------------------------------------------    
         function scrachedHandled(canvas, ctx, width, height) {
             const isHalfScratched = checkScratchProgress(ctx, width, height);
             if (isHalfScratched) {
@@ -353,6 +348,8 @@
             //     });
             //     ajaxSendControl = false;
             // }
+            winSound.play();
+            winSound.volume = 0.9;
             removeAllExistingFrws();
             createAndAppendFrws();
             mainBody.classList.remove("scrapped");
@@ -474,9 +471,6 @@
             document.addEventListener("touchmove", function(event) {
                 coinCursor.style.left = event.touches[0].clientX + "px";
                 coinCursor.style.top = event.touches[0].clientY + "px";
-                setTimeout(function() {
-                    winSound.play();
-                }, 500);
             });
         }
     });
