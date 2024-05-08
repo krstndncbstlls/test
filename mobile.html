@@ -57,6 +57,7 @@
         <p class="m-0 ps-txt">◆ 點擊「即刻開刮」將自動扣除1500點兌換一次機會。</p>
     </div>
     <!-- ---  popup modal --- -->
+    <button type="button" class="wsbtn"></button>
     <div class="giftModal-con">
         <div class="giftmodal-outer">
             <div class="giftmodal-inner">
@@ -197,6 +198,11 @@
         });
     
         // ---------------------------------------------
+        var wsbtn = document.querySelector('.wsbtn');
+        $(document).on('click', '.wsbtn', function () {
+            winSound.play();
+        });
+    
         function scrachedHandled(canvas, ctx, width, height) {
             const isHalfScratched = checkScratchProgress(ctx, width, height);
             if (isHalfScratched) {
@@ -207,7 +213,7 @@
                     const eggIco = item.querySelector('.egg-ico');
                     if (item === parentItem) {
                         eggCover.style.opacity = '0';
-                        winPlaySound = true;
+                        wsbtn.click();
                         giftAnimation();
                     } else {
                         item.style.pointerEvents = 'none';
@@ -216,10 +222,8 @@
                         scrapeBtn.style.pointerEvents = 'none';
                     }
                 });
-                winSound.play();
             }
         }
-    
     
         function handleTouch(event, canvas, ctx, scratchSize, revealPercent, width, height) {
             event.preventDefault();
