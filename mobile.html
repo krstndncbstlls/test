@@ -198,27 +198,31 @@
         });
     
         // ---------------------------------------------
-        function scrachedHandled(canvas, ctx, width, height) {
-            const isHalfScratched = checkScratchProgress(ctx, width, height);
-            if (isHalfScratched) {
-                const parentItem = canvas.closest('.egg-item');
-                const eggItems = document.querySelectorAll('.egg-item');
-                eggItems.forEach(item => {
-                    const eggCover = item.querySelector('.egg-cover');
-                    const eggIco = item.querySelector('.egg-ico');
-                    if (item === parentItem) {
-                        eggCover.style.opacity = '0';
-                        winSound.play();
-                        giftAnimation();
-                    } else {
-                        item.style.pointerEvents = 'none';
-                        if (eggIco) eggIco.remove(); 
-                        const scrapeBtn = document.querySelector('.scrape-btn');
-                        scrapeBtn.style.pointerEvents = 'none';
-                    }
-                });
+            function scrachedHandled(canvas, ctx, width, height) {
+                const isHalfScratched = checkScratchProgress(ctx, width, height);
+                if (isHalfScratched) {
+                    const parentItem = canvas.closest('.egg-item');
+                    const eggItems = document.querySelectorAll('.egg-item');
+                    var winPlaySound = false;
+                    eggItems.forEach(item => {
+                        const eggCover = item.querySelector('.egg-cover');
+                        const eggIco = item.querySelector('.egg-ico');
+                        if (item === parentItem) {
+                            eggCover.style.opacity = '0';
+                            winPlaySound = true;
+                            if (winPlaySound) {
+                                winSound.play(); 
+                            }
+                            giftAnimation();
+                        } else {
+                            item.style.pointerEvents = 'none';
+                            if (eggIco) eggIco.remove(); 
+                            const scrapeBtn = document.querySelector('.scrape-btn');
+                            scrapeBtn.style.pointerEvents = 'none';
+                        }
+                    });
+                }
             }
-        }
     
     
         function handleTouch(event, canvas, ctx, scratchSize, revealPercent, width, height) {
