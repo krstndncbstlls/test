@@ -148,6 +148,7 @@
 
         var winSound = document.getElementById("winSound");
         winSound.src = 'music/winSound.mp3';
+        winSound.volume = 0;
         // ----------
     
         var iconArr = '5';
@@ -194,7 +195,6 @@
                 });
             }
             winSound.play();
-            winSound.volume = 0;
         });
     
         // ---------------------------------------------    
@@ -349,7 +349,6 @@
             //     ajaxSendControl = false;
             // }
             winSound.play();
-            winSound.volume = 0.9;
             removeAllExistingFrws();
             createAndAppendFrws();
             mainBody.classList.remove("scrapped");
