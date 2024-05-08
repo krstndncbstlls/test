@@ -85,7 +85,6 @@
     <img src="images/coin.png" class="coin-cursor">
 </body>
 <audio id="audioBG"></audio>
-<audio id="winSound"></audio>
 </html>
 
 <script src="js/pixi.min.js"></script>
@@ -144,12 +143,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         var audioBG = document.getElementById("audioBG");
         audioBG.src = 'music/fireflies.mp3';
-        var volumeMenu = document.getElementById("volumeMenu");
-    
-        var winSound = document.getElementById("winSound");
-        winSound.src = 'music/winSound.mp3';
-        winSound.volume = 0.9;
-    
+        var volumeMenu = document.getElementById("volumeMenu");    
         // ----------
     
         var iconArr = '5';
@@ -198,31 +192,37 @@
         });
     
         // ---------------------------------------------
-            function scrachedHandled(canvas, ctx, width, height) {
-                const isHalfScratched = checkScratchProgress(ctx, width, height);
-                if (isHalfScratched) {
-                    const parentItem = canvas.closest('.egg-item');
-                    const eggItems = document.querySelectorAll('.egg-item');
-                    var winPlaySound = false;
-                    eggItems.forEach(item => {
-                        const eggCover = item.querySelector('.egg-cover');
-                        const eggIco = item.querySelector('.egg-ico');
-                        if (item === parentItem) {
-                            eggCover.style.opacity = '0';
-                            winPlaySound = true;
-                            if (winPlaySound) {
-                                winSound.play(); 
-                            }
-                            giftAnimation();
-                        } else {
-                            item.style.pointerEvents = 'none';
-                            if (eggIco) eggIco.remove(); 
-                            const scrapeBtn = document.querySelector('.scrape-btn');
-                            scrapeBtn.style.pointerEvents = 'none';
+        function scrachedHandled(canvas, ctx, width, height) {
+            const isHalfScratched = checkScratchProgress(ctx, width, height);
+            if (isHalfScratched) {
+                const parentItem = canvas.closest('.egg-item');
+                const eggItems = document.querySelectorAll('.egg-item');
+                var winPlaySound = false;
+                eggItems.forEach(item => {
+                    const eggCover = item.querySelector('.egg-cover');
+                    const eggIco = item.querySelector('.egg-ico');
+                    if (item === parentItem) {
+                        eggCover.style.opacity = '0';
+                        winPlaySound = true;
+                        if (winPlaySound) {
+                            playWinSound(); // Play sound after user interaction
                         }
-                    });
-                }
+                        giftAnimation();
+                    } else {
+                        item.style.pointerEvents = 'none';
+                        if (eggIco) eggIco.remove(); 
+                        const scrapeBtn = document.querySelector('.scrape-btn');
+                        scrapeBtn.style.pointerEvents = 'none';
+                    }
+                });
             }
+        }
+    
+        function playWinSound() {
+            const winSounds = new Audio('__CSS__/ScratchPurple/music/winSound.mp3');
+            winSounds.volume = 0.9;
+            winSounds.play();
+        }
     
     
         function handleTouch(event, canvas, ctx, scratchSize, revealPercent, width, height) {
