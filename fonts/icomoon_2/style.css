@@ -1,0 +1,1273 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?yg6tf2');
+  src:  url('fonts/icomoon.eot?yg6tf2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?yg6tf2') format('truetype'),
+    url('fonts/icomoon.woff?yg6tf2') format('woff'),
+    url('fonts/icomoon.svg?yg6tf2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-GameATG:before {
+  content: "\ea56";
+}
+.icon-deposit:before {
+  content: "\e900";
+}
+.icon-home1:before {
+  content: "\e902";
+}
+.icon-like-icon:before {
+  content: "\e903";
+}
+.icon-payment-icon:before {
+  content: "\e904";
+}
+.icon-Promo:before {
+  content: "\e905";
+}
+.icon-safe-shield:before {
+  content: "\e906";
+}
+.icon-live-01:before {
+  content: "\e901";
+}
+.icon-lottery:before {
+  content: "\e907";
+}
+.icon-poker-01:before {
+  content: "\e908";
+}
+.icon-slot-01:before {
+  content: "\e909";
+}
+.icon-sports-01:before {
+  content: "\e90a";
+}
+.icon-fishing-01:before {
+  content: "\e90b";
+}
+.icon-deposit2:before {
+  content: "\e910";
+}
+.icon-home11:before {
+  content: "\e911";
+}
+.icon-like-icon1:before {
+  content: "\e912";
+}
+.icon-payment-icon1:before {
+  content: "\e913";
+}
+.icon-Promo2:before {
+  content: "\e915";
+}
+.icon-safe-shield1:before {
+  content: "\e916";
+}
+.icon-id_verify-01 .path1:before {
+  content: "\e9d6";
+  color: rgb(0, 0, 0);
+}
+.icon-id_verify-01 .path2:before {
+  content: "\e9d7";
+  margin-left: -1.0966796875em;
+  color: rgb(0, 0, 0);
+}
+.icon-id_verify-01 .path3:before {
+  content: "\e9d8";
+  margin-left: -1.0966796875em;
+  color: rgb(0, 0, 0);
+}
+.icon-id_verify-01 .path4:before {
+  content: "\e9d9";
+  margin-left: -1.0966796875em;
+  color: rgb(0, 0, 0);
+}
+.icon-id_verify-01 .path5:before {
+  content: "\e9da";
+  margin-left: -1.0966796875em;
+  color: rgb(0, 0, 0);
+}
+.icon-id_verify-01 .path6:before {
+  content: "\e9db";
+  margin-left: -1.0966796875em;
+  color: rgb(0, 0, 0);
+}
+.icon-id_verify-01 .path7:before {
+  content: "\e9dc";
+  margin-left: -1.0966796875em;
+  color: rgb(255, 255, 255);
+}
+.icon-id_verify-01 .path8:before {
+  content: "\e9dd";
+  margin-left: -1.0966796875em;
+  color: rgb(0, 0, 0);
+}
+.icon-logo-gold:before {
+  content: "\e917";
+}
+.icon-logo-veyron:before {
+  content: "\e918";
+}
+.icon-trolley-icon-01:before {
+  content: "\e994";
+}
+.icon-Correct-01:before {
+  content: "\e94a";
+}
+.icon-error-01:before {
+  content: "\e94b";
+}
+.icon-fish:before {
+  content: "\e92f";
+}
+.icon-GameGG:before {
+  content: "\e9bd";
+}
+.icon-app-phone-2:before {
+  content: "\e9bc";
+}
+.icon-cdollar:before {
+  content: "\e9bb";
+}
+.icon-coffer:before {
+  content: "\e923";
+}
+.icon-cpie-chart:before {
+  content: "\e91b";
+}
+.icon-cuser:before {
+  content: "\e91c";
+}
+.icon-telemarketer:before {
+  content: "\e92d";
+}
+.icon-china .path1:before {
+  content: "\e92e";
+  color: rgb(216, 0, 39);
+}
+.icon-china .path2:before {
+  content: "\e9f8";
+  margin-left: -1em;
+  color: rgb(255, 218, 68);
+}
+.icon-china .path3:before {
+  content: "\e9f9";
+  margin-left: -1em;
+  color: rgb(255, 218, 68);
+}
+.icon-china .path4:before {
+  content: "\e9fa";
+  margin-left: -1em;
+  color: rgb(255, 218, 68);
+}
+.icon-china .path5:before {
+  content: "\e9fb";
+  margin-left: -1em;
+  color: rgb(255, 218, 68);
+}
+.icon-china .path6:before {
+  content: "\e9fc";
+  margin-left: -1em;
+  color: rgb(255, 218, 68);
+}
+.icon-hk .path1:before {
+  content: "\e95d";
+  color: rgb(216, 0, 39);
+}
+.icon-hk .path2:before {
+  content: "\e9fd";
+  margin-left: -1em;
+  color: rgb(240, 240, 240);
+}
+.icon-hk .path3:before {
+  content: "\e9fe";
+  margin-left: -1em;
+  color: rgb(240, 240, 240);
+}
+.icon-hk .path4:before {
+  content: "\e9ff";
+  margin-left: -1em;
+  color: rgb(240, 240, 240);
+}
+.icon-hk .path5:before {
+  content: "\ea00";
+  margin-left: -1em;
+  color: rgb(240, 240, 240);
+}
+.icon-hk .path6:before {
+  content: "\ea01";
+  margin-left: -1em;
+  color: rgb(240, 240, 240);
+}
+.icon-usa .path1:before {
+  content: "\e95e";
+  color: rgb(240, 240, 240);
+}
+.icon-usa .path2:before {
+  content: "\ea02";
+  margin-left: -1em;
+  color: rgb(216, 0, 39);
+}
+.icon-usa .path3:before {
+  content: "\ea03";
+  margin-left: -1em;
+  color: rgb(216, 0, 39);
+}
+.icon-usa .path4:before {
+  content: "\ea04";
+  margin-left: -1em;
+  color: rgb(216, 0, 39);
+}
+.icon-usa .path5:before {
+  content: "\ea05";
+  margin-left: -1em;
+  color: rgb(216, 0, 39);
+}
+.icon-usa .path6:before {
+  content: "\ea10";
+  margin-left: -1em;
+  color: rgb(0, 82, 180);
+}
+.icon-Marvel:before {
+  content: "\a007";
+}
+.icon-GameXL:before {
+  content: "\a006";
+}
+.icon-fortune:before {
+  content: "\a003";
+}
+.icon-envelope:before {
+  content: "\e95f";
+}
+.icon-home:before {
+  content: "\e960";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-gift:before {
+  content: "\e961";
+}
+.icon-hammer2:before {
+  content: "\e9a8";
+}
+.icon-volume-high:before {
+  content: "\ea26";
+}
+.icon-volume-mute2:before {
+  content: "\ea2a";
+}
+.icon-GameSPORT:before {
+  content: "\ea53";
+}
+.icon-GameOB2:before {
+  content: "\ea55";
+}
+.icon-GameYZ2:before {
+  content: "\ea54";
+}
+.icon-ghost:before {
+  content: "\ea52";
+}
+.icon-poker:before {
+  content: "\ea38";
+}
+.icon-recent .path1:before {
+  content: "\ea39";
+  color: rgb(0, 0, 0);
+}
+.icon-recent .path2:before {
+  content: "\ea3a";
+  margin-left: -1em;
+  color: rgb(17, 17, 17);
+}
+.icon-recent .path3:before {
+  content: "\ea3b";
+  margin-left: -1em;
+  color: rgb(17, 17, 17);
+}
+.icon-recent .path4:before {
+  content: "\ea3c";
+  margin-left: -1em;
+  color: rgb(17, 17, 17);
+}
+.icon-recent .path5:before {
+  content: "\ea3d";
+  margin-left: -1em;
+  color: rgb(17, 17, 17);
+}
+.icon-recent .path6:before {
+  content: "\ea3e";
+  margin-left: -1em;
+  color: rgb(17, 17, 17);
+}
+.icon-recent .path7:before {
+  content: "\ea3f";
+  margin-left: -1em;
+  color: rgb(17, 17, 17);
+}
+.icon-recent .path8:before {
+  content: "\ea40";
+  margin-left: -1em;
+  color: rgb(17, 17, 17);
+}
+.icon-recent .path9:before {
+  content: "\ea41";
+  margin-left: -1em;
+  color: rgb(17, 17, 17);
+}
+.icon-slots:before {
+  content: "\ea42";
+}
+.icon-sport:before {
+  content: "\ea43";
+}
+.icon-APP:before {
+  content: "\ea44";
+}
+.icon-cinema:before {
+  content: "\ea45";
+}
+.icon-fish1:before {
+  content: "\ea46";
+}
+.icon-live:before {
+  content: "\ea47";
+}
+.icon-lottery1:before {
+  content: "\ea48";
+}
+.icon-star:before {
+  content: "\ea49";
+}
+.icon-CS1:before {
+  content: "\ea4a";
+}
+.icon-home2:before {
+  content: "\ea4b";
+}
+.icon-promo:before {
+  content: "\ea4c";
+}
+.icon-mail:before {
+  content: "\ea4d";
+}
+.icon-speaker:before {
+  content: "\ea4e";
+}
+.icon-wallet2:before {
+  content: "\ea4f";
+}
+.icon-GameRP:before {
+  content: "\ea37";
+}
+.icon-GameOB:before {
+  content: "\e9a3";
+}
+.icon-GameOBG:before {
+  content: "\e9cd";
+}
+.icon-GameYZ:before {
+  content: "\e9e3";
+}
+.icon-movie_as005 .path1:before {
+  content: "\ea32";
+  color: rgb(0, 0, 0);
+}
+.icon-movie_as005 .path2:before {
+  content: "\ea33";
+  margin-left: -1em;
+  color: rgb(10, 10, 10);
+}
+.icon-movie_as005 .path3:before {
+  content: "\ea34";
+  margin-left: -1em;
+  color: rgb(10, 10, 10);
+}
+.icon-movie_as005 .path4:before {
+  content: "\ea35";
+  margin-left: -1em;
+  color: rgb(10, 10, 10);
+}
+.icon-movie_as005 .path5:before {
+  content: "\ea36";
+  margin-left: -1em;
+  color: rgb(10, 10, 10);
+}
+.icon-GameEG:before {
+  content: "\ea31";
+}
+.icon-vip-011:before {
+  content: "\ea28";
+}
+.icon-select-3:before {
+  content: "\ea29";
+}
+.icon-select-4:before {
+  content: "\ea2b";
+}
+.icon-select-1:before {
+  content: "\ea2c";
+}
+.icon-select-5:before {
+  content: "\ea2d";
+}
+.icon-select-6:before {
+  content: "\ea2e";
+}
+.icon-select-2:before {
+  content: "\ea2f";
+}
+.icon-vip-01:before {
+  content: "\ea30";
+}
+.icon-line-logo-01:before {
+  content: "\ea27";
+  color: #fff;
+}
+.icon-wallet1:before {
+  content: "\ea25";
+}
+.icon-cs_ai4:before {
+  content: "\ea21";
+}
+.icon-cs_ai1:before {
+  content: "\ea22";
+}
+.icon-cs_ai2:before {
+  content: "\ea23";
+}
+.icon-cs_ai3:before {
+  content: "\ea24";
+}
+.icon-m:before {
+  content: "\ea1f";
+}
+.icon-m2:before {
+  content: "\ea20";
+}
+.icon-GameAB2:before {
+  content: "\ea12";
+}
+.icon-GameSPINIX:before {
+  content: "\ea11";
+}
+.icon-GameBINGO:before {
+  content: "\e99a";
+}
+.icon-GameBJ:before {
+  content: "\e924";
+}
+.icon-usdt-guide:before {
+  content: "\ea0f";
+}
+.icon-clock-01:before {
+  content: "\ea0d";
+}
+.icon-coorparate-01:before {
+  content: "\ea0e";
+}
+.icon-logo-ncows:before {
+  content: "\e9c8";
+  color: #626161;
+}
+.icon-GameCG:before {
+  content: "\ea0c";
+}
+.icon-GameRCG:before {
+  content: "\e9cc";
+}
+.icon-GameSB2:before {
+  content: "\ea0a";
+}
+.icon-GameSP2:before {
+  content: "\ea0b";
+}
+.icon-GameDBG:before {
+  content: "\e9f3";
+}
+.icon-GameDBGS:before {
+  content: "\ea08";
+}
+.icon-GameDBGSM:before {
+  content: "\ea09";
+}
+.icon-GameSTA:before {
+  content: "\e9f2";
+}
+.icon-GameDT:before {
+  content: "\e9d4";
+}
+.icon-GameBE:before {
+  content: "\ea06";
+}
+.icon-GameMD:before {
+  content: "\ea07";
+}
+.icon-vivn .path1:before {
+  content: "\e9f0";
+  color: rgb(216, 0, 39);
+}
+.icon-vivn .path2:before {
+  content: "\e9f1";
+  margin-left: -1em;
+  color: rgb(255, 230, 78);
+}
+.icon-join:before {
+  content: "\e9ef";
+}
+.icon-GameDS:before {
+  content: "\e9e4";
+}
+.icon-GameSBP:before {
+  content: "\e9d5";
+}
+.icon-change_password:before {
+  content: "\e9d3";
+}
+.icon-iconaaaaa-1:before {
+  content: "\e9d0";
+}
+.icon-fb-iconbbbbb-1:before {
+  content: "\e9d1";
+  color: #475993;
+}
+.icon-line-iconcccc-1:before {
+  content: "\e9d2";
+  color: #00b900;
+}
+.icon-GameBNG2:before {
+  content: "\e926";
+}
+.icon-movie_demo:before {
+  content: "\e9b7";
+}
+.icon-movie_gold:before {
+  content: "\e90d";
+}
+.icon-movie_official:before {
+  content: "\e9c9";
+}
+.icon-movie_veyron:before {
+  content: "\e9cb";
+}
+.icon-movie_dev:before {
+  content: "\e90e";
+}
+.icon-movie_ez:before {
+  content: "\e9b8";
+}
+.icon-movie_ncows:before {
+  content: "\e9ca";
+}
+.icon-GameKS:before {
+  content: "\e9c6";
+}
+.icon-download-01:before {
+  content: "\e9be";
+}
+.icon-fishing-011:before {
+  content: "\e9bf";
+}
+.icon-Live-icon-01:before {
+  content: "\e9c0";
+}
+.icon-lottery-01:before {
+  content: "\e9c1";
+}
+.icon-movie-01:before {
+  content: "\e9c2";
+}
+.icon-Poker-01:before {
+  content: "\e9c3";
+}
+.icon-slots-011:before {
+  content: "\e9c4";
+}
+.icon-sports-011:before {
+  content: "\e9c5";
+}
+.icon-logo-dev:before {
+  content: "\e9a4";
+}
+.icon-logo-demo:before {
+  content: "\e9a5";
+}
+.icon-GameING:before {
+  content: "\e9a2";
+}
+.icon-GameGR:before {
+  content: "\e9a0";
+}
+.icon-GameSBL:before {
+  content: "\e9a1";
+}
+.icon-GameRSG:before {
+  content: "\e99f";
+}
+.icon-GameICG:before {
+  content: "\e99e";
+}
+.icon-GameCFB:before {
+  content: "\e99b";
+}
+.icon-GameHAU:before {
+  content: "\e99d";
+}
+.icon-GameVSL:before {
+  content: "\e99c";
+}
+.icon-accounts:before {
+  content: "\e954";
+}
+.icon-bouns:before {
+  content: "\e955";
+}
+.icon-compensate:before {
+  content: "\e956";
+}
+.icon-event:before {
+  content: "\e957";
+}
+.icon-given:before {
+  content: "\e958";
+}
+.icon-lottor4:before {
+  content: "\e959";
+}
+.icon-recharge:before {
+  content: "\e95a";
+}
+.icon-transfer:before {
+  content: "\e95b";
+}
+.icon-withdraw:before {
+  content: "\e95c";
+}
+.icon-e_wallet-01:before {
+  content: "\e940";
+}
+.icon-phone-01:before {
+  content: "\e941";
+}
+.icon-User-01:before {
+  content: "\e942";
+}
+.icon-deposit1:before {
+  content: "\e93e";
+}
+.icon-brand:before {
+  content: "\e93b";
+}
+.icon-CS:before {
+  content: "\e93c";
+}
+.icon-Promo1:before {
+  content: "\e93d";
+}
+.icon-lv-1:before {
+  content: "\e920";
+}
+.icon-lv-2:before {
+  content: "\e938";
+}
+.icon-lv-3:before {
+  content: "\e939";
+}
+.icon-lv-4:before {
+  content: "\e93a";
+}
+.icon-Chessboard:before {
+  content: "\e933";
+}
+.icon-Lottery:before {
+  content: "\e934";
+}
+.icon-Person:before {
+  content: "\e935";
+}
+.icon-Electronic:before {
+  content: "\e936";
+}
+.icon-Sport:before {
+  content: "\e937";
+}
+.icon-line:before {
+  content: "\a011";
+  color: #00c300;
+}
+.icon-checkmark:before {
+  content: "\e9df";
+}
+.icon-cancel:before {
+  content: "\e9e0";
+}
+.icon-profile:before {
+  content: "\e9de";
+}
+.icon-brand_m:before {
+  content: "\e9a6";
+}
+.icon-customer-service_m_d:before {
+  content: "\e9a7";
+}
+.icon-game-report_m_d:before {
+  content: "\e9a9";
+}
+.icon-happy-tv_m:before {
+  content: "\e9aa";
+}
+.icon-logo-official:before {
+  content: "\e9ab";
+}
+.icon-member-center_m_d:before {
+  content: "\e9ac";
+}
+.icon-new-password_M:before {
+  content: "\e9ad";
+}
+.icon-point-center_m_d:before {
+  content: "\e9ae";
+}
+.icon-refresh1:before {
+  content: "\e9af";
+}
+.icon-sign-out_m_d:before {
+  content: "\e9b0";
+}
+.icon-sys_info_m_d:before {
+  content: "\e9b1";
+}
+.icon-withdrawal_m_d:before {
+  content: "\e9b2";
+}
+.icon-cs_n:before {
+  content: "\e9b3";
+}
+.icon-deposit_m_n:before {
+  content: "\e9b4";
+}
+.icon-discount_n:before {
+  content: "\e9b5";
+}
+.icon-home_n:before {
+  content: "\e9b6";
+}
+.icon-GameWM:before {
+  content: "\e986";
+}
+.icon-send-mail-01:before {
+  content: "\e980";
+}
+.icon-GameAPLE:before {
+  content: "\e94e";
+}
+.icon-GameBIG:before {
+  content: "\e94f";
+}
+.icon-GameTGP:before {
+  content: "\e950";
+}
+.icon-GameVR:before {
+  content: "\e951";
+}
+.icon-GameQT:before {
+  content: "\e91e";
+}
+.icon-GameDG:before {
+  content: "\e91f";
+}
+.icon-GameAB:before {
+  content: "\e92b";
+}
+.icon-GameAE:before {
+  content: "\e921";
+}
+.icon-GameASG:before {
+  content: "\e978";
+}
+.icon-GameBG:before {
+  content: "\e922";
+}
+.icon-GameBNG:before {
+  content: "\e925";
+}
+.icon-GameLG:before {
+  content: "\e927";
+}
+.icon-GameOG:before {
+  content: "\e928";
+}
+.icon-GamePA:before {
+  content: "\e929";
+}
+.icon-GamePA2:before {
+  content: "\e92a";
+}
+.icon-GameRTG:before {
+  content: "\e92c";
+}
+.icon-GameRTG2:before {
+  content: "\e943";
+}
+.icon-GameSA:before {
+  content: "\e944";
+}
+.icon-GameSB:before {
+  content: "\e945";
+}
+.icon-GameSP:before {
+  content: "\e946";
+}
+.icon-GameSPE:before {
+  content: "\e947";
+}
+.icon-GameUC8:before {
+  content: "\e948";
+}
+.icon-GameXBS:before {
+  content: "\e949";
+}
+.icon-cogs:before {
+  content: "\e930";
+}
+.icon-megaphone:before {
+  content: "\e91d";
+}
+.icon-comments:before {
+  content: "\e931";
+}
+.icon-stats:before {
+  content: "\e932";
+}
+.icon-wallet:before {
+  content: "\a008";
+}
+.icon-banknote:before {
+  content: "\a009";
+}
+.icon-minus:before {
+  content: "\e93f";
+}
+.icon-locked:before {
+  content: "\e90c";
+}
+.icon-mail-envelope-closed:before {
+  content: "\e981";
+}
+.icon-mail-envelope-open:before {
+  content: "\e982";
+}
+.icon-microphone:before {
+  content: "\e9b9";
+}
+.icon-time:before {
+  content: "\ea50";
+}
+.icon-logo-ez:before {
+  content: "\e9f4";
+}
+.icon-CAPTCHA .path1:before {
+  content: "\e9e5";
+  color: rgb(35, 24, 21);
+}
+.icon-CAPTCHA .path2:before {
+  content: "\e9e6";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-confirm:before {
+  content: "\e9e7";
+}
+.icon-LINE .path1:before {
+  content: "\e9e8";
+  color: rgb(0, 0, 0);
+}
+.icon-LINE .path2:before {
+  content: "\e9e9";
+  margin-left: -1em;
+  color: rgb(35, 24, 21);
+}
+.icon-LINE .path3:before {
+  content: "\e9ea";
+  margin-left: -1em;
+  color: rgb(35, 24, 21);
+}
+.icon-LINE .path4:before {
+  content: "\e9eb";
+  margin-left: -1em;
+  color: rgb(35, 24, 21);
+}
+.icon-LINE .path5:before {
+  content: "\e9ec";
+  margin-left: -1em;
+  color: rgb(35, 24, 21);
+}
+.icon-password:before {
+  content: "\e9ed";
+}
+.icon-phone_number:before {
+  content: "\e9ee";
+}
+.icon-upload:before {
+  content: "\e9e2";
+}
+.icon-atm-card-01 .path1:before {
+  content: "\e969";
+  color: rgb(0, 0, 0);
+}
+.icon-atm-card-01 .path2:before {
+  content: "\e96a";
+  margin-left: -0.984375em;
+  color: rgb(255, 255, 255);
+}
+.icon-atm-card-01 .path3:before {
+  content: "\e96b";
+  margin-left: -0.984375em;
+  color: rgb(0, 0, 0);
+}
+.icon-lock-icon-01:before {
+  content: "\e97f";
+}
+.icon-calender-011:before {
+  content: "\e97b";
+}
+.icon-Free-discount-01:before {
+  content: "\e97c";
+}
+.icon-money-01:before {
+  content: "\e97e";
+}
+.icon-trolley-01:before {
+  content: "\e97d";
+}
+.icon-wallet-01:before {
+  content: "\e966";
+}
+.icon-reminder-01:before {
+  content: "\e967";
+}
+.icon-automatic-01:before {
+  content: "\e968";
+}
+.icon-ATM-01:before {
+  content: "\e96c";
+}
+.icon-checking-01:before {
+  content: "\e96d";
+}
+.icon-Bank-01:before {
+  content: "\e96e";
+}
+.icon-bulb-01:before {
+  content: "\e96f";
+}
+.icon-fill-form-01:before {
+  content: "\e970";
+}
+.icon-good-sold-01:before {
+  content: "\e971";
+}
+.icon-mobile-deposit-icon-01:before {
+  content: "\e972";
+}
+.icon-security-authority-01:before {
+  content: "\e973";
+}
+.icon-closed-eye:before {
+  content: "\e952";
+}
+.icon-open-eye:before {
+  content: "\e953";
+}
+.icon-Lock-01:before {
+  content: "\e94c";
+}
+.icon-user-01:before {
+  content: "\e94d";
+}
+.icon-gift1:before {
+  content: "\e90f";
+}
+.icon-email:before {
+  content: "\e9ba";
+}
+.icon-chevron-down:before {
+  content: "\e914";
+}
+.icon-chevron-up:before {
+  content: "\e919";
+}
+.icon-chevron-right:before {
+  content: "\e91a";
+}
+.icon-share-alternitive:before {
+  content: "\e9e1";
+}
+.icon-web-info-01:before {
+  content: "\e987";
+}
+.icon-cookie-01:before {
+  content: "\e988";
+}
+.icon-coorparate-011:before {
+  content: "\e989";
+}
+.icon-file-01:before {
+  content: "\e98a";
+}
+.icon-lock-01:before {
+  content: "\e98b";
+}
+.icon-safety-01:before {
+  content: "\e98c";
+}
+.icon-MZ-01:before {
+  content: "\e98d";
+}
+.icon-chrome-01:before {
+  content: "\e98e";
+}
+.icon-IE-01:before {
+  content: "\e98f";
+}
+.icon-visa-card-01:before {
+  content: "\e990";
+}
+.icon-record-01:before {
+  content: "\e991";
+}
+.icon-register-ribbon-01:before {
+  content: "\e992";
+}
+.icon-team-01:before {
+  content: "\e993";
+}
+.icon-vanguard-01:before {
+  content: "\e995";
+}
+.icon-view-icon-01 .path1:before {
+  content: "\e996";
+  color: rgb(0, 0, 0);
+}
+.icon-view-icon-01 .path2:before {
+  content: "\e997";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-view-icon-01 .path3:before {
+  content: "\e998";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-view-icon-01 .path4:before {
+  content: "\e999";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-send-mail-02:before {
+  content: "\e985";
+}
+.icon-closed-letter-01:before {
+  content: "\e983";
+}
+.icon-open-letter-01:before {
+  content: "\e984";
+}
+.icon-circle-up:before {
+  content: "\e974";
+}
+.icon-close1:before {
+  content: "\ea14";
+}
+.icon-time1:before {
+  content: "\ea51";
+}
+.icon-message-01:before {
+  content: "\ea15";
+}
+.icon-movie-011:before {
+  content: "\ea16";
+}
+.icon-personal-01:before {
+  content: "\ea17";
+}
+.icon-sell-01:before {
+  content: "\ea18";
+}
+.icon-activity-01:before {
+  content: "\ea19";
+}
+.icon-billrecord-01:before {
+  content: "\ea1a";
+}
+.icon-cs-01:before {
+  content: "\ea1b";
+}
+.icon-depositpt-01:before {
+  content: "\ea1c";
+}
+.icon-games-01:before {
+  content: "\ea1d";
+}
+.icon-logout-01:before {
+  content: "\ea1e";
+}
+.icon-withdrawl-01:before {
+  content: "\ea13";
+}
+.icon-slots-01:before {
+  content: "\e962";
+}
+.icon-all-01:before {
+  content: "\e975";
+}
+.icon-fire-01:before {
+  content: "\e976";
+}
+.icon-love-01:before {
+  content: "\e977";
+}
+.icon-star-01:before {
+  content: "\e979";
+}
+.icon-table-01:before {
+  content: "\e97a";
+}
+.icon-back-icon-01:before {
+  content: "\e965";
+}
+.icon-chat-icon-01:before {
+  content: "\e964";
+}
+.icon-joystick:before {
+  content: "\e963";
+}
+.icon-apply-01:before {
+  content: "\e9c7";
+}
+.icon-authority-cert-01:before {
+  content: "\e9ce";
+}
+.icon-calender-01:before {
+  content: "\e9cf";
+}
+.icon-line-01:before {
+  content: "\e9f5";
+}
+.icon-money-hand-01:before {
+  content: "\e9f6";
+}
+.icon-GameKY:before {
+  content: "\e9f7";
+}
+.icon-user:before {
+  content: "\f007";
+}
+.icon-power-off:before {
+  content: "\f011";
+}
+.icon-refresh:before {
+  content: "\f021";
+}
+.icon-bar-chart:before {
+  content: "\f080";
+}
+.icon-bar-chart-o:before {
+  content: "\f080";
+}
+.icon-credit-card:before {
+  content: "\f09d";
+}
+.icon-money:before {
+  content: "\f0d6";
+}
+.icon-youtube-square:before {
+  content: "\f166";
+}
+.icon-question:before {
+  content: "\f128";
+}
+.icon-star-o:before {
+  content: "\f006";
+}
+.icon-check:before {
+  content: "\f00c";
+}
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-remove:before {
+  content: "\f00d";
+}
+.icon-times:before {
+  content: "\f00d";
+}
+.icon-home111:before {
+  content: "\f015";
+}
+.icon-question-circle:before {
+  content: "\f059";
+}
+.icon-heart-o:before {
+  content: "\f08a";
+}
+.icon-caret-down:before {
+  content: "\f0d7";
+}
+.icon-caret-up:before {
+  content: "\f0d8";
+}
+.icon-caret-left:before {
+  content: "\f0d9";
+}
+.icon-caret-right:before {
+  content: "\f0da";
+}
+.icon-gavel:before {
+  content: "\f0e3";
+}
+.icon-lightbulb-o:before {
+  content: "\f0eb";
+}
+.icon-apple:before {
+  content: "\f179";
+}
+.icon-android:before {
+  content: "\f17b";
+}
+.icon-gittip:before {
+  content: "\f184";
+}
+.icon-question1:before {
+  content: "\f129";
+}
+.icon-envelope-o:before {
+  content: "\f003";
+}
+.icon-calendar:before {
+  content: "\f073";
+}
