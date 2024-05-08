@@ -148,7 +148,7 @@
 
         var winSound = document.getElementById("winSound");
         winSound.src = 'music/winSound.mp3';
-        winSound.volume = 0;
+        winSound.volume = 0.9;
         // ----------
     
         var iconArr = '5';
@@ -194,6 +194,7 @@
                     }
                 });
             }
+            winSound.currentTime = 1.7;
             winSound.play();
         });
     
@@ -348,7 +349,6 @@
             //     });
             //     ajaxSendControl = false;
             // }
-            winSound.play();
             removeAllExistingFrws();
             createAndAppendFrws();
             mainBody.classList.remove("scrapped");
@@ -470,6 +470,10 @@
             document.addEventListener("touchmove", function(event) {
                 coinCursor.style.left = event.touches[0].clientX + "px";
                 coinCursor.style.top = event.touches[0].clientY + "px";
+                setTimeout(function() {
+                    winSound.currentTime = 0;
+                    winSound.play();
+                }, 500);
             });
         }
     });
