@@ -1,0 +1,277 @@
+@media screen and (max-width: 769px){
+    #mainBody {
+        width: 100vw;
+        background-position: top;
+        background-repeat: no-repeat;
+        overflow: auto;
+        background-size: cover;
+        padding: 0px 20px 100px 20px;
+    }
+    p.datetime-event {
+        left: 0px;
+        margin-top: 0px!important;
+        margin-right: 29px!important;
+    }
+    .topCon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 34px;
+    }
+    .menuBtn .home-btn, 
+    .menuBtn .div-volume, 
+    .menuBtn .speaker-btn, 
+    .menuBtn .mute-btn {
+        height: 60px;
+        width: 60px;
+    }
+    .eggScratch-con {
+        margin-top: 222px;
+        position: relative;
+        grid-column-gap: 15px;
+        grid-template-areas:
+            "a b c"
+            "d e f"
+            "g h i";
+    }
+    .eggScratch-con .egg-item:nth-child(1) { grid-area: a; }
+    .eggScratch-con .egg-item:nth-child(2) { grid-area: b; }
+    .eggScratch-con .egg-item:nth-child(3) { grid-area: c; }
+    .eggScratch-con .egg-item:nth-child(4) { grid-area: d; }
+    .eggScratch-con .egg-item:nth-child(5) { grid-area: e; }
+    .eggScratch-con .egg-item:nth-child(6) { grid-area: f; }
+    .eggScratch-con .egg-item:nth-child(7) { grid-area: h; }
+    .eggScratch-con .egg-item:nth-child(8) { grid-area: i; }
+
+    .eggScratch-con .egg-item, 
+    .eggScratch-con .egg-item .egg-cover {
+        width: 211px;
+        height: 247.35px;
+    }
+
+    .gameplayBtn {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+
+    .scrape-btn, .rule-btn {
+        width: 209px;
+    }
+
+    .levelPoints-con p,
+    .ps-txt,
+    p.datetime-event,
+    .scrape-btn, .rule-btn,
+    .rulemodal-outer  {
+        font-size: 25px;
+    }
+
+    .levelPoints-con, 
+    .ps-txt {
+        width: 60%;
+        position: relative;
+    }
+
+    .ps-txt {
+        left: 0px;
+        padding-left: 15px;
+    }
+
+    #mainBody.scrapped img.coin-cursor {
+        opacity: 0;
+    }
+    
+    .rulemodal-outer {
+        height: 95%;
+        width: 78%;
+        padding: 0px;
+    }
+    .rulemodal-dets {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 70%;
+        width: 71%;
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 541px){
+    .topCon {
+        margin-top: 14px;
+    }
+
+    .levelPoints-con p, .ps-txt, p.datetime-event, .scrape-btn, .rule-btn, .rulemodal-outer {
+        font-size: 18px;
+    }
+
+    .menuBtn .home-btn, .menuBtn .div-volume, .menuBtn .speaker-btn, .menuBtn .mute-btn {
+        height: 50px;
+        width: 50px;
+    }
+
+    .eggScratch-con .egg-item, .eggScratch-con .egg-item .egg-cover {
+        width: 142px;
+        height: 165.35px;
+    }
+
+    .eggScratch-con {
+        margin-top: 160px;
+    }
+
+    .eggScratch-con .egg-item .egg-ico {
+        height: 90px;
+    }
+
+    .scrape-btn, .rule-btn {
+        width: 172px;
+    }
+}
+
+@media screen and (max-width: 431px){
+    .topCon {
+        margin-top: 6px;
+    }
+    .menuBtn .home-btn, .menuBtn .div-volume, .menuBtn .speaker-btn, .menuBtn .mute-btn {
+        height: 45px;
+        width: 45px;
+    }
+
+    .levelPoints-con p, .ps-txt, p.datetime-event, .scrape-btn, .rule-btn, .rulemodal-outer {
+        font-size: 16px;
+    }
+
+    .eggScratch-con {
+        margin-top: 128px;
+    }
+
+    .eggScratch-con .egg-item, .eggScratch-con .egg-item .egg-cover {
+        width: 109px;
+        height: 125.35px;
+    }
+
+    .eggScratch-con .egg-item .egg-ico {
+        height: 66px;
+    }
+
+    .scrape-btn, .rule-btn {
+        width: 135px;
+    }
+
+    .scrape-btn {
+        margin-right: 8px;
+    }
+
+    .rulemodal-outer {
+        height: 72%;
+        width: 95%;
+    }
+    .giftmodal-inner {
+        transform: scale(0.8);
+    }
+    
+}
+
+@media screen and (max-width: 415px){
+    .eggScratch-con .egg-item, .eggScratch-con .egg-item .egg-cover {
+        width: 97px;
+        height: 113.35px;
+    }
+
+    .levelPoints-con p, .ps-txt, p.datetime-event, .scrape-btn, .rule-btn, .rulemodal-outer {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 391px){
+    .eggScratch-con {
+        margin-top: 110px;
+    }
+
+    .gameplayBtn {
+        margin-top: 13px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    #mainBody {
+        padding: 0px 20px 80px 20px;
+    }
+
+    .menuBtn .home-btn, .menuBtn .div-volume, .menuBtn .speaker-btn, .menuBtn .mute-btn {
+        height: 40px;
+        width: 40px;
+    }
+
+    .eggScratch-con {
+        margin-top: 106px;
+    }
+
+    .eggScratch-con .egg-item, .eggScratch-con .egg-item .egg-cover {
+        width: 94px;
+        height: 110.35px;
+    }
+
+    .scrape-btn, .rule-btn {
+        width: 118px;
+    }
+
+    .gameplayBtn {
+        margin-bottom: 31px;
+    }
+
+    .rulemodal-outer {
+        height: 88%;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 361px){
+    .topCon {
+        margin-top: 4px;
+    }
+
+    .eggScratch-con {
+        margin-top: 104px;
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+    }
+
+    .levelPoints-con p, .ps-txt, p.datetime-event, .scrape-btn, .rule-btn, .rulemodal-outer {
+        font-size: 14px;
+    }
+
+
+    .rulemodal-outer {
+        height: 76%;
+        font-size: 14px;
+    }
+    .bigtxt {
+        font-size: 20px;
+    }
+    .giftmodal-inner {
+        transform: scale(0.6);
+    }
+}
+
+
+@media screen and (max-width: 321px){
+    .levelPoints-con p, .ps-txt, p.datetime-event, .scrape-btn, .rule-btn, .rulemodal-outer {
+        font-size: 12px;
+    }
+
+    .eggScratch-con {
+        margin-top: 84px;
+    }
+
+    .eggScratch-con .egg-item, .eggScratch-con .egg-item .egg-cover {
+        width: 82px;
+        height: 95.35px;
+    }
+    
+    .eggScratch-con .egg-item .egg-ico {
+        height: 53px;
+    }
+}
