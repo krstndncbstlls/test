@@ -234,7 +234,6 @@ p.datetime-event {
 /* -------egg scratch con---------------- */
 .eggScratch-con {
   display: grid;
-  grid-template-columns: auto auto auto auto;
   justify-items: center;
   justify-content: space-evenly;
   grid-row-gap: 15px;
@@ -309,13 +308,6 @@ p.datetime-event {
 }
 
 /* --------------------MOdal--------------------- */
-button.wsbtn {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
 .giftModal-con {
   position: fixed;
   z-index: 1000;
