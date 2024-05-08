@@ -1,0 +1,516 @@
+<!-- ScratchPurple Kristina -->
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <title>desktop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- icon -->
+    <link href="fonts/icomoon_2/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="css/general.css" type="text/css" />
+    <link rel="stylesheet" href="css/desktop.css" type="text/css" />
+</head>
+<body id="mainBody" style="background-image: url(images/desktop/mainBg1.jpg);">
+    <div class="mbContainer">
+        <div class="leftCon">
+            <div class="menuBtn">
+                <div class="home-btn">
+                    <img src="images/home.svg">
+                </div>
+                <div id="volumeMenu" class="div-volume mute">
+                    <div class="speaker-btn">
+                        <img src="images/speakerOn.svg">
+                    </div>
+                    <div class="mute-btn">
+                        <img src="images/speakerOff.svg">
+                    </div>
+                </div>
+            </div>
+            <p class="datetime-event m-0 wthBorder" style="--edgeColor:#4d435b;">5月12日00:00至5月12日23:59</p>
+            <div class="direction-con">
+                <div class="levelPoints-con">
+                    <p class="m-0">當前等級 : 尊龍</p>
+                    <p class="m-0">持有點數 : 1600</p>
+                    <p class="m-0">遊玩次數 : 0</p>
+                    <p class="m-0">可兌換次數 : 1</p>
+                </div>
+                <div class="gameplayBtn">
+                    <div class="scrape-btn">即刻開刮</div>
+                    <div class="rule-btn">規則與玩法</div>
+                </div>
+            </div>
+            <p class="m-0 ps-txt">◆ 點擊「即刻開刮」將自動扣除1500點兌換一次機會。</p>
+            <div class="eggScratch-con">
+                <for start="0" end="8">
+                    <div class="egg-item" style="background-image: url(images/egg-bg.png);">
+                        <canvas class="egg-cover" width="125" height="146.35"></canvas>
+                    </div>
+                </for>
+            </div>
+        </div>
+        <div class="rightCon">
+            <div class="grid">
+                <div class="item">
+                    <img src="images/img0.png" class="icon">
+                    <p class="m-0">x100</p>
+                </div>
+                <div class="item">
+                    <img src="images/img1.png" class="icon">
+                    <p class="m-0">x200</p>
+                </div>
+                <div class="item">
+                    <img src="images/img2.png" class="icon">
+                    <p class="m-0">x300</p>
+                </div>
+                <div class="item">
+                    <img src="images/img3.png" class="icon">
+                    <p class="m-0">x500</p>
+                </div>
+                <div class="item">
+                    <img src="images/img4.png" class="icon">
+                    <p class="m-0">x1000</p>
+                </div>
+                <div class="item">
+                    <img src="images/img5.png" class="icon">
+                    <p class="m-0">x3000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---  popup modal --- -->
+    <div class="giftModal-con">
+        <div class="giftmodal-outer">
+            <div class="giftmodal-inner">
+                <img src="images/gift1.png" class="giftbg">
+                <div class="giftmodal-info">
+                    <p class="gift-txt m-0 wthBorder" style="--edgeColor:#d43cf4;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ruleModal-con">
+        <div class="rulemodal-outer" style="background-image: url(images/desktop/ruleBg.png);">
+            <div class="rulemodal-dets">
+                <p class="text-center">在活勸期間於遊戲館內累積點數可至活動頁換取彩券,每1500點可獲得一次刮刮樂機會, 依照會員等級有獎利加成,即刮即中獎。</p>
+                <p class="text-center bigtxt">會員等級獎加成如下</p>
+                <p class="text-center" style="color: #efd9b2;">尊龍x100%/黃金x140%/白金x150%/鑽石x160%</p>
+                <p>活動期間:4月01日00:00~4月07日23:59</p>
+                <p>領取方式:於活動頁面點擊「即刻開刮」將自動扣除1500點兌換一次機會。</p>
+                <p class="mtop30">注意事項:</p>
+                <p>(1)為秉持公平公正原則,本娛樂平台有權對會員進行監控,若發生違背、欺騙或利用不正當 手段進行非法獲利者,我們將有權凍結您帳號內點數。.</p>
+                <p class="m-0">(2) 為避免對文字的理解差異或活動如有任何異動,本娛樂城有權在任何時間,修改、暫停 或取消優惠活動。</p>
+            </div>
+        </div>
+        <div class="rulemodal-overlay"></div>
+    </div>
+    <img src="images/coin.png" class="coin-cursor">
+</body>
+<audio id="audioBG"></audio>
+<audio id="winSound"></audio>
+</html>
+
+<script src="js/pixi.min.js"></script>
+<script src="https://www.kkkk1000.com/js/spriteUtilities.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script>
+// const isMobile = '{$isMobile}';
+const isMobile = window.matchMedia("(max-width: 769px)").matches;
+
+console.log('Stored bodyWidth:', window.innerWidth);
+console.log('Stored bodyHeight:', window.innerHeight);
+
+if (!isMobile) {
+    window.onload = function() {
+        const scratchMain = document.getElementById('mainBody');
+
+        function setScratchMainDimensions() {
+            // Retrieving from localStorage
+            const bodyWidth = localStorage.getItem('bw');
+            const bodyHeight = localStorage.getItem('bh');
+            // Storing in localStorage if not already stored
+            if (bodyWidth === null || bodyHeight === null) {
+                localStorage.setItem('bw', window.innerWidth);
+                localStorage.setItem('bh', window.innerHeight);
+            }
+            scratchMain.style.width = localStorage.getItem('bw') + 'px';
+            scratchMain.style.height = localStorage.getItem('bh') + 'px';
+            scratchMain.style.backgroundSize = localStorage.getItem('bw') + 'px ' + localStorage.getItem('bh') + 'px';
+        }
+
+        // Function to handle resizing, Check if width or height has decreased
+        function bodyResize() {
+            if (window.innerWidth < parseInt(localStorage.getItem('bw'))) {
+                scratchMain.style.overflowY = 'scroll';
+            }
+            if (window.innerHeight < parseInt(localStorage.getItem('bh'))) {
+                scratchMain.style.overflowX = 'scroll';
+            }
+        }
+
+        function removeLocalStorageOnUnload(event) {
+            if (event.clientY < 0) {
+                // This indicates that the user is likely closing the page/tab
+                localStorage.removeItem('bw');
+                localStorage.removeItem('bh');
+            }
+        }
+
+        window.addEventListener('resize', bodyResize);
+        window.addEventListener('beforeunload', removeLocalStorageOnUnload);
+        setScratchMainDimensions();
+    };
+}
+
+// -----------------------------------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    var audioBG = document.getElementById("audioBG");
+    audioBG.src = 'music/fireflies.mp3';
+    var volumeMenu = document.getElementById("volumeMenu");
+
+    var winSound = document.getElementById("winSound");
+    winSound.src = 'music/winSound.mp3';
+    winSound.volume = 0.9;
+
+    // ----------
+
+    var iconArr = '5';
+    var awardArr = '3000';
+    // var ajaxSendControl = true;
+
+    var mainBody = document.getElementById("mainBody");
+    const eggItems = document.querySelectorAll('.egg-item');
+    const scrapeBtn = document.querySelector('.scrape-btn');
+
+    // Set egg-items default to not clickable
+    eggItems.forEach(item => item.style.pointerEvents = 'none');
+
+    let clickCount = 0;
+    let isSwiping = false;
+
+    scrapeBtn.addEventListener('click', () => {
+        clickCount++;
+        const scrapeBtnClicked = clickCount % 2 === 0;
+        if (scrapeBtnClicked) {
+            //reset to default if not yet scratched & removed the append eggIco
+            mainBody.classList.remove("scrapped");
+            eggItems.forEach(item => {
+                const eggIco = item.querySelector('.egg-ico');
+                if (eggIco) {
+                    item.style.pointerEvents = 'none';
+                    eggIco.remove();
+                    $('.giftmodal-info .gift-txt').text('');
+                }
+            });
+        } else {
+            //append eggIcon & make the egg item scratchable
+            mainBody.classList.add("scrapped");
+            eggItems.forEach(item => {
+                if (!item.querySelector('.egg-ico')) {
+                    item.style.pointerEvents = 'auto';
+                    const img = document.createElement('img');
+                    img.src = 'images/img' + iconArr + '.png';
+                    img.classList.add('egg-ico');
+                    item.appendChild(img);
+                    //add gift award to pop up
+                    $('.giftmodal-info .gift-txt').text(awardArr);
+                }
+            });
+        }
+    });
+
+    // ---------------------------------------------
+    function scrachedHandled(canvas, ctx, width, height) {
+        const isHalfScratched = checkScratchProgress(ctx, width, height);
+        if (isHalfScratched) {
+            const parentItem = canvas.closest('.egg-item');
+            const eggItems = document.querySelectorAll('.egg-item');
+            eggItems.forEach(item => {
+                const eggCover = item.querySelector('.egg-cover');
+                const eggIco = item.querySelector('.egg-ico');
+                if (item === parentItem) {
+                    eggCover.style.opacity = '0';
+                    giftAnimation();
+                } else {
+                    item.style.pointerEvents = 'none';
+                    if (eggIco) eggIco.remove(); 
+                    const scrapeBtn = document.querySelector('.scrape-btn');
+                    scrapeBtn.style.pointerEvents = 'none';
+                }
+            });
+        }
+    }
+
+
+    function handleTouch(event, canvas, ctx, scratchSize, revealPercent, width, height) {
+        event.preventDefault();
+        const touch = event.touches[0];
+        const touchX = touch.clientX - canvas.getBoundingClientRect().left;
+        const touchY = touch.clientY - canvas.getBoundingClientRect().top;
+        drawBrush(ctx, touchX, touchY, scratchSize, revealPercent);
+        setTimeout(() => {
+            scrachedHandled(canvas, ctx, width, height);
+        }, 1000);
+    }
+    
+    // Function to initialize canvas and scratching functionality
+    function initCanvas(canvas, scratchSize, revealPercent) {
+        const ctx = canvas.getContext('2d', { willReadFrequently: true });
+        const width = canvas.width;
+        const height = canvas.height;
+        let isSwiping = false;
+
+        const originalImage = new Image();
+        originalImage.src = 'images/egg-cover.png';
+        originalImage.onload = function () {
+            ctx.drawImage(originalImage, 0, 0, width, height);
+        };
+
+        function handleSwipe(event) {
+            if (isSwiping) {
+                const mousePos = getMousePos(canvas, event);
+                drawBrush(ctx, mousePos.x, mousePos.y, scratchSize, revealPercent);
+                setTimeout(() => {
+                    scrachedHandled(canvas, ctx, width, height);
+                }, 500);
+            }
+        }
+
+        function handleTouchSwipe(event) {
+            event.preventDefault();
+            const touch = event.touches[0];
+            const canvas = touch.target;
+            const ctx = canvas.getContext('2d');
+            const scratchSize = 50;
+            const revealPercent = 50;
+            const width = canvas.width;
+            const height = canvas.height;
+            const touchX = touch.clientX - canvas.getBoundingClientRect().left;
+            const touchY = touch.clientY - canvas.getBoundingClientRect().top;
+            drawBrush(ctx, touchX, touchY, scratchSize, revealPercent);
+            setTimeout(() => {
+                scrachedHandled(canvas, ctx, width, height);
+            }, 1000);
+        }
+
+        canvas.addEventListener('mousedown', () => { isSwiping = true; });
+        canvas.addEventListener('mouseup', () => { isSwiping = false; });
+        canvas.addEventListener('mousemove', handleSwipe);
+        canvas.addEventListener('touchstart', handleTouchSwipe);
+        canvas.addEventListener('touchmove', handleTouchSwipe);
+    }
+
+    eggItems.forEach(item => {
+        const canvas = item.querySelector('.egg-cover');
+        initCanvas(canvas, 50, 50);
+    });
+
+    //----------gift modal animation------------
+    const giftModal = document.querySelector('.giftModal-con');
+    const giftmodalInner = document.querySelector('.giftmodal-inner');
+
+    function removeAllExistingFrws() {
+        const existingFrws = document.querySelectorAll('.giftmodal-inner img.frw');
+        const existingsh01 = document.querySelectorAll('.giftmodal-inner .shineCon01');
+        const existingsh02 = document.querySelectorAll('.giftmodal-inner .shineCon02');
+        existingFrws.forEach(frw => { frw.remove(); });
+        existingsh01.forEach(sh01 => { sh01.remove(); });
+        existingsh02.forEach(sh02 => { sh02.remove(); });
+    }
+
+    function createAndAppendFrws() {
+        for (let i = 1; i <= 2; i++) {
+            const shCon = document.createElement('div');
+            shCon.classList.add(`shineCon0${i}`);
+            giftmodalInner.appendChild(shCon);
+
+            for (let j = 1; j <= 4; j++) {
+                const frw = document.createElement('img');
+                frw.src = `images/fr0${j}.png`;
+                frw.classList.add('frw', `fr0${j}`);
+                giftmodalInner.appendChild(frw);
+
+                const sh = document.createElement('img');
+                sh.src = `images/shine.png`;
+                sh.classList.add('shine', `sh0${j}`);
+                shCon.appendChild(sh);
+            }
+        }
+    }
+
+    function animateFrws() {
+        $('.fr01').addClass('show');
+        $('.gift-txt').addClass('scale');
+        setTimeout(() => {
+            $('.shineCon01').addClass('show');
+            $('.fr02').addClass('show');
+        }, 800);
+        setTimeout(() => {
+            $('.shineCon02').addClass('show');
+            $('.fr03').addClass('show');
+        }, 1000);
+        setTimeout(() => {
+            $('.fr04').addClass('show');
+            giftModal.style.pointerEvents = 'auto';
+        }, 1600);
+    }
+
+    function giftAnimation() {
+        // 呼叫後端
+        // if (ajaxSendControl) {
+        //     jQuery.ajax({
+        //         type: "POST",
+        //         url: "__URL__/ajaxFinishStatus",
+        //         timeout: 30000, //超時時間
+        //         success: function(response) {
+        //             console.log(response);
+        //         },
+        //         error: function(xhr, status, error) {
+        //             console.error(error);
+        //         }
+        //     });
+        //     ajaxSendControl = false;
+        // }
+        winSound.play();
+        removeAllExistingFrws();
+        createAndAppendFrws();
+        mainBody.classList.remove("scrapped");
+        giftModal.style.display = 'block';
+        giftModal.style.pointerEvents = 'none';
+        animateFrws();
+    }
+
+    // -----------------------------------------
+    // Function to get the mouse position relative to the canvas
+    function getMousePos(canvas, evt) {
+        const { left, top } = canvas.getBoundingClientRect();
+        const x = evt.clientX - left;
+        const y = evt.clientY - top;
+        return { x, y };
+    }
+
+    // Function to draw a brush circle
+    function drawBrush(ctx, x, y, scratchSize, revealPercent) {
+        ctx.beginPath();
+        ctx.arc(x, y, scratchSize / 2, 0, 2 * Math.PI);
+        ctx.fillStyle = 'rgba(0, 0, 0, 0)'; // Transparent color
+        ctx.fill();
+    }
+
+    // Function to check if almost 50% of the canvas is scratched
+    function checkScratchProgress(ctx, width, height) {
+        const imageData = ctx.getImageData(0, 0, width, height);
+        const totalPixels = width * height;
+        let scratchedPixels = 0;
+        for (let i = 0; i < totalPixels * 4; i += 4) {
+            // Check if the pixel is not transparent or white (scratched)
+            if (imageData.data[i + 3] !== 0 || (imageData.data[i] !== 255 || imageData.data[i + 1] !== 255 || imageData.data[i + 2] !== 255)) {
+                scratchedPixels++;
+            }
+        }
+        const percentScratched = (scratchedPixels / totalPixels) * 100;
+        return percentScratched >= 50;
+    }
+
+    // --------------------gift modal close--------------------------------
+    $(document).on('click', '.giftModal-con', function () {
+        setTimeout(function() {
+            giftModal.style.display = 'none';
+            location.reload();
+        }, 300);
+    });
+
+    // -------------menu volume--------------------------------
+    var volumeSoundTriggered = false;
+    function volumeSound() {
+        if (volumeMenu.classList.contains('speaker')) {
+            audioBG.pause();
+            audioBG.loop = false;
+            volumeMenu.classList.add("mute");
+            volumeMenu.classList.remove("speaker");
+            volumeSoundTriggered = false;
+        } else {
+            audioBG.play();
+            audioBG.loop = true;
+            volumeMenu.classList.add("speaker");
+            volumeMenu.classList.remove("mute");
+            volumeSoundTriggered = true;
+        }
+    }
+
+    $(document).on('click', '#volumeMenu', function () {
+        volumeSound();
+    });
+    
+
+    // --------------------rule modal--------------------------------
+    const ruleModal = document.querySelector('.ruleModal-con');
+
+    $(document).on('click', '.rule-btn', function () {
+        setTimeout(function() {
+            ruleModal.style.display = 'block';
+        }, 300);
+    });
+
+    $(document).on('click', '.rulemodal-overlay', function () {
+        setTimeout(function() {
+            ruleModal.style.display = 'none';
+        }, 300);
+    });
+
+    // ------------------coin cursor--------------------------
+    if (!isMobile) {
+        document.addEventListener('mousemove', (event) => {
+            const coinCursor = document.querySelector('.coin-cursor');
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+            
+            coinCursor.style.left = `${mouseX}px`;
+            coinCursor.style.top = `${mouseY}px`;
+        });
+    } else {
+        const eggItems = document.querySelectorAll('.egg-item');
+        const coinCursor = document.querySelector('.coin-cursor');
+
+        eggItems.forEach(function(eggItem) {
+            eggItem.addEventListener("touchstart", function(event) {
+                coinCursor.style.opacity = `1`;
+            });
+        });
+
+        eggItems.forEach(function(eggItem) {
+            eggItem.addEventListener("touchend", function(event) {
+                coinCursor.style.opacity = `0`;
+            });
+        });
+
+        document.addEventListener("touchstart", function(event) {
+            coinCursor.style.left = event.touches[0].clientX + "px";
+            coinCursor.style.top = event.touches[0].clientY + "px";
+        });
+
+        document.addEventListener("touchmove", function(event) {
+            coinCursor.style.left = event.touches[0].clientX + "px";
+            coinCursor.style.top = event.touches[0].clientY + "px";
+        });
+    }
+});
+
+// Prevent zooming
+document.addEventListener('wheel', event => (event.ctrlKey || event.metaKey) && event.preventDefault(), { passive: false });
+document.addEventListener('keydown', event => (event.ctrlKey || event.metaKey) && ['+', '-', '='].includes(event.key) && event.preventDefault(), false);
+
+//disabled inspectelent
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('keydown', event => { if (event.ctrlKey) event.preventDefault(); });
+document.addEventListener('mousedown', event => { if (event.button === 0) event.preventDefault();});
+
+</script>
