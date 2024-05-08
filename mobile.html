@@ -208,6 +208,7 @@
                     const eggIco = item.querySelector('.egg-ico');
                     if (item === parentItem) {
                         eggCover.style.opacity = '0';
+                        winSound.play();
                         giftAnimation();
                     } else {
                         item.style.pointerEvents = 'none';
@@ -349,7 +350,6 @@
             //     });
             //     ajaxSendControl = false;
             // }
-            winSound.play();
             removeAllExistingFrws();
             createAndAppendFrws();
             mainBody.classList.remove("scrapped");
