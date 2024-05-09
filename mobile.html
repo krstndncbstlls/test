@@ -105,14 +105,13 @@
     <img src="images/coin.png" class="coin-cursor">
 
     <audio id="audioBG"></audio>
-    <audio id="winSound"></audio>
+    <audio id="giftSound"></audio>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="js/pixi.min.js"></script>
 <script src="https://www.kkkk1000.com/js/spriteUtilities.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script>
-    // const isMobile = '{$isMobile}';
     const isMobile = window.matchMedia("(max-width: 769px)").matches;
     
     console.log('Stored bodyWidth:', window.innerWidth);
@@ -166,9 +165,9 @@
         audioBG.src = 'music/fireflies.mp3';
         var volumeMenu = document.getElementById("volumeMenu");
     
-        var winSound = document.getElementById("winSound");
-        winSound.src = 'music/winSound.mp3';
-        winSound.volume = 0.9;
+        var giftSound = document.getElementById("giftSound");
+        giftSound.src = 'music/giftSound.mp3';
+        giftSound.volume = 0.9;
         // ----------
     
         var iconArr = '5';
@@ -206,7 +205,7 @@
                     if (!item.querySelector('.egg-ico')) {
                         item.style.pointerEvents = 'auto';
                         const img = document.createElement('img');
-                        img.src = 'images/img' + iconArr + '.png';
+                        img.src = 'images/img' + iconArr + '.png?t={$tStr}';
                         img.classList.add('egg-ico');
                         item.appendChild(img);
                         //add gift award to pop up
@@ -214,6 +213,9 @@
                     }
                 });
             }
+            //play giftsound to default but at end time
+            giftSound.currentTime = 1.6;
+            giftSound.play();
         });
     
         // ---------------------------------------------
@@ -227,6 +229,10 @@
                     const eggIco = item.querySelector('.egg-ico');
                     if (item === parentItem) {
                         eggCover.style.opacity = '0';
+                        setTimeout(function() {
+                            giftSound.currentTime = 0;
+                            giftSound.play();
+                        }, 500);
                         giftAnimation();
                     } else {
                         item.style.pointerEvents = 'none';
@@ -237,7 +243,6 @@
                 });
             }
         }
-    
     
         function handleTouch(event, canvas, ctx, scratchSize, revealPercent, width, height) {
             event.preventDefault();
@@ -258,7 +263,7 @@
             let isSwiping = false;
     
             const originalImage = new Image();
-            originalImage.src = 'images/egg-cover.png';
+            originalImage.src = 'images/egg-cover.png?t={$tStr}';
             originalImage.onload = function () {
                 ctx.drawImage(originalImage, 0, 0, width, height);
             };
@@ -323,12 +328,12 @@
     
                 for (let j = 1; j <= 4; j++) {
                     const frw = document.createElement('img');
-                    frw.src = `images/fr0${j}.png`;
+                    frw.src = `images/fr0${j}.png?t={$tStr}`;
                     frw.classList.add('frw', `fr0${j}`);
                     giftmodalInner.appendChild(frw);
     
                     const sh = document.createElement('img');
-                    sh.src = `images/shine.png`;
+                    sh.src = `images/shine.png?t={$tStr}`;
                     sh.classList.add('shine', `sh0${j}`);
                     shCon.appendChild(sh);
                 }
@@ -368,7 +373,6 @@
             //     });
             //     ajaxSendControl = false;
             // }
-            winSound.play();
             removeAllExistingFrws();
             createAndAppendFrws();
             mainBody.classList.remove("scrapped");
@@ -498,8 +502,9 @@
     document.addEventListener('keydown', event => (event.ctrlKey || event.metaKey) && ['+', '-', '='].includes(event.key) && event.preventDefault(), false);
     
     //disabled inspectelent
-    document.addEventListener('contextmenu', event => event.preventDefault());
-    document.addEventListener('keydown', event => { if (event.ctrlKey) event.preventDefault(); });
-    document.addEventListener('mousedown', event => { if (event.button === 0) event.preventDefault();});
+    // document.addEventListener('contextmenu', event => event.preventDefault());
+    // document.addEventListener('keydown', event => { if (event.ctrlKey) event.preventDefault(); });
+    // document.addEventListener('mousedown', event => { if (event.button === 0) event.preventDefault();});
+    
 </script>
 </html>
